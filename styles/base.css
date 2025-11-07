@@ -1,0 +1,64 @@
+:root {
+    --first-color: rgb(37, 37, 102);
+    --second-color: #36454f;
+    --third-color: beige;
+    --first-border: 1px solid black;
+    --second-border: 1px solid beige;
+    --font: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#course-title {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    border: 1px solid rgb(0 0 0 / 10%);
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--second-color);
+    margin: 0 auto;
+}
+
+nav a {
+    display: block;
+    color: var(--third-color);
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    color: aqua;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-column: 1fr;
+    max-width: 800px;
+    text-align: center;
+    font-family: var(--font);
+    font-weight: 100;
+}

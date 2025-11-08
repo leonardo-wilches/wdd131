@@ -1,10 +1,15 @@
 :root {
     --first-color: rgb(44, 44, 109);
     --second-color: rgb(58, 74, 85);
-    --third-color: rgb(245, 245, 220);
+    --third-color: rgb(255, 255, 255);
     --first-border: 0.5px solid rgb(153, 147, 147);
     --second-border: 0.5px solid rgb(245, 245, 220);
     --font: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--first-border);
+    color: var(--third-color);
 }
 
 body {
@@ -27,6 +32,7 @@ body {
 
 nav {
     background-color: var(--second-color);
+    color: var(--third-color);
     margin: 0 auto;
 }
 
@@ -43,7 +49,7 @@ nav a {
 
 nav a:hover {
     text-decoration: overline;
-    color: aqua;
+    color: rgb(255, 255, 255);
 }
 
 nav ul {
@@ -56,7 +62,9 @@ nav ul {
 
 main {
     display: grid;
+    gap: 1.5rem;
     max-width: 800px;
+    margin: 0 auto;
     text-align: center;
     font-family: var(--font);
     font-size: 1.1rem;

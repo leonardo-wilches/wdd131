@@ -10,6 +10,7 @@
 header {
     background-color: var(--first-color);
     color: var(--third-color);
+    font-family: var(--font);
 }
 
 body {
@@ -22,7 +23,7 @@ body {
     margin: 0 auto;
     background-color: var(--first-color);
     color: var(--third-color);
-    border: var(--first-border)
+    border: var(--first-border);
     font-family: var(--font);
     font-weight: 100;
     font-size: 2rem;

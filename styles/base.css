@@ -23,7 +23,6 @@ body {
     margin: 0 auto;
     background-color: var(--first-color);
     color: var(--third-color);
-    border: var(--first-border);
     font-family: var(--font);
     font-weight: 100;
     font-size: 2rem;
@@ -62,10 +61,10 @@ nav ul {
 }
 
 h1 {
-    grid-template-rows: 1 3;
     background-color: var(--first-color);
     color: var(--third-color);
     padding: 1rem;
+    margin-top: 1rem;
     margin-bottom: 0;
     grid-column: 1 / 3;
     text-align: center;

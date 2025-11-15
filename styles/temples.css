@@ -7,11 +7,26 @@
     --font: 'Roboto', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    
+    align-items: center;
     color: var(--third-color);
+    margin: 0 auto;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    font-family: var(--font);
+}
+
+header,
+main {
     margin: 0 auto;
 }
 
@@ -26,8 +41,8 @@ header p {
     border: none;
     color: var(--third-color);
     cursor: pointer;
-    padding: 0.5rem 1rem;
-    display: block;
+    padding: 1rem 1.5rem 1rem 1rem;
+    justify-self: end;
 }
 
 #navList {
@@ -35,61 +50,37 @@ header p {
     overflow: hidden;
     background-color: var(--second-color);
     transition: max-height .3s ease;
+    grid-column: 1 / 3;
 }
 
 #navList.open {
     max-height: 500px;
+    justify-content: center;
+    grid-column: 1 / 3;
 }
 
-#navList li a {
-    display: block;
-    padding: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-nav ul li {
-    text-align: center;
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
     display: block;
     padding: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-nav {
-    background-color: var(--second-color);
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-nav a {
-    display: block;
-    color: var(--third-color);
     text-align: center;
+    color: var(--third-color);
     text-decoration: none;
-    font-family: var(--font);
-    font-weight: 100;
     font-size: 1.2rem;
-    padding: 1rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    font-weight: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
 }
 
 nav a:hover {
     text-decoration: overline;
     color: var(--third-color)
-}
-
-
-header {
-    background-color: var(--first-color);
-    color: var(--third-color);
-    font-family: var(--font);
 }
 
 h1 {
@@ -108,7 +99,7 @@ main {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 1rem 0.7rem 1rem;
     text-align: center;
     font-family: var(--font);
     font-size: 1.1rem;

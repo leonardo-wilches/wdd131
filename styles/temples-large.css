@@ -1,9 +1,29 @@
-@media (min-width: 800px) {
-    nav ul {
-        display: flex;
+@media (min-width: 801px) {
+
+    .hamburger {
+        display: none;
     }
 
-    nav ul li {
-        flex: 1 1 100%;
+    #navList {
+        max-height: none;
+        /* mostrar siempre */
+        display: flex;
+        background: none;
+    }
+
+    #navList li {
+        flex: 1;
+        border: none;
+    }
+
+    #navList li a {
+        border: none;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 801px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }

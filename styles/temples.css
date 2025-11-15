@@ -21,7 +21,6 @@ header {
     color: var(--third-color);
     margin: 0 auto;
     background-color: var(--first-color);
-    color: var(--third-color);
     font-family: var(--font);
 }
 

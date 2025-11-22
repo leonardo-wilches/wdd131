@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Cuntry Page - Leonardo Wilches</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Country page by Leonardo Wilches. Web development practice and course portfolio.">
+    <meta name="author" content="Leonardo Wilches">
+    
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+    <section class="hero"> 
+        <picture>
+            <source srcset="images/japan-small.webp" media="(max-width: 600px)">
+            <source srcset="images/japan-medium.webp" media="(max-width: 1200px)">
+            <img src="images/japan.webp" alt="Mount Fuji Japan">
+        </picture>
+    </section>
+    <main>
+        <section class="data-box">
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li>
+                    <span class="label"><strong>Area:</strong></span>
+                    <span class="value">377,973 sq km</span>
+                </li>
+                <li>
+                    <span class="label"><strong>Population:</strong></span>
+                    <span class="value">122,851,972</span>
+                </li>
+                <li>
+                    <span class="label"><strong>Capital:</strong></span>
+                    <span class="value">Tokyo</span>
+                </li>
+                <li>
+                    <span class="label"><strong>Languages:</strong></span>
+                    <span class="value">Japanese</span>
+                </li>
+                <li>
+                    <span class="label"><strong>Currency:</strong></span>
+                    <span class="value">Japanese Yen</span>
+                </li>
+                <li>
+                    <span class="label"><strong>Time Zone:</strong></span>
+                    <span class="value">UTC+9</span>
+                </li>
+                <li>
+                    <span class="label"><strong>Calling Code:</strong></span>
+                    <span class="value">+81</span>
+                </li>
+                <li>
+                    <span class="label"><strong>Internet TLD:</strong></span>
+                    <span class="value">.jp</span>
+                </li>
+            </ul>
+        </section>
+        <section class="weather-box">
+            <h2>Weather</h2>
+            <img class="weather-icon" src="images/weather-icon.svg" alt="Weather Icon">
+            <ul class="data-list">
+                <li>
+                    <span class="label"><strong>Temperature:</strong></span>
+                    <span class="value">5.4°C</span>
+                </li>
+                <li>
+                    <span class="label"><strong>Conditions:</strong></span>
+                    <span class="value">Partly Cloudy</span>
+                </li>
+                <li>
+                    <span class="label"><strong>Wind:</strong></span>
+                    <span class="value">5 km/h</span>
+                </li>
+                <li>
+                    <span class="label"><strong>Wind Chill:</strong></span>
+                    <span class="value">Wind Chill</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Leonardo Wilches - Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

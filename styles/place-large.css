@@ -9,7 +9,7 @@
         text-align: center;
         padding: 1rem;
         background: var(--primary);
-        color: white;
+        color: #F4F4F4;
         position: relative;
     }
 
@@ -39,7 +39,7 @@
     .weather-box {
         position: absolute;
         width: 280px;
-        background: white;
+        background: #F4F4F4;
         border-radius: 10px;
         border: 1px solid var(--border);
         box-shadow: 0 0 15px #00000025;

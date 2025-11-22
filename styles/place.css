@@ -1,7 +1,7 @@
 :root {
     --primary: #BC002D;
-    --dark: #1A1A2E;
-    --light: #F4F4F4;
+    --secundary: #1A1A2E;
+    --background: #F4F4F4;
     --text: #1A1A1A;
     --border: #D3D3D3;
 }
@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    background: var(--light);
+    background: var(--background);
     color: var(--text);
 }
 
@@ -72,7 +72,7 @@ main {
 footer {
     text-align: center;
     padding: 1rem;
-    background: var(--dark);
+    background: var(--secundary);
     color: white;
 }
 

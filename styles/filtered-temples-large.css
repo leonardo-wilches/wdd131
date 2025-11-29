@@ -43,4 +43,30 @@
         max-width: 100%;
         grid-column: 1 / -1;
     }
+
+    #temple-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .temple-card {
+        background: var(--background-color);
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease;
+    }
+
+    .temple-card:hover {
+        transform: scale(1.03);
+    }
+
+    .temple-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
 }

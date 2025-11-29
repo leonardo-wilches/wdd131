@@ -146,9 +146,10 @@ footer p {
 
 #temple-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
     padding: 1rem;
+    margin: 0 auto;
 }
 
 .temple-card {
@@ -157,7 +158,9 @@ footer p {
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease;{
+    margin: 0 auto;
+    }
 }
 
 .temple-card:hover {
@@ -168,4 +171,6 @@ footer p {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
+    margin: 1.2rem auto;
+    margin-bottom: 0;
 }

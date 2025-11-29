@@ -76,20 +76,36 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/concepcion-chile-temple/concepcion-chile-temple-273-main.jpg"
     },
     {
-        templeName: "Rio de Janeiro Brazil",
-        location: "Rio de Janeiro, Brazil",
-        dedicated: "2022, May, 8",
-        area: 29966,
+        templeName: "Yigo Guaml",
+        location: "RYigo, Guam",
+        dedicated: "2022, May, 22",
+        area: 6861,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/rio-de-janeiro-brazil-temple/rio-de-janeiro-brazil-temple-8167-main.jpg"
     },
     {
         templeName: "Santiago Chile",
         location: "Santiago, Chile",
-        dedicated: "2006, March, 12",
+        dedicated: "1983, September, 15-17",
         area: 20831,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/_temp/024-Santiago-Chile-Temple.jpg"
+    },
+    {
+        templeName: "Salt Lake Utah",
+        location: "Salt Lake City, Utah",
+        dedicated: "1893, April, 6-24",
+        area: 382207,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
+    },
+    {
+        templeName: "St. George Utah",
+        location: "St. George, Utah",
+        dedicated: "1877, April, 6-8",
+        area: 143969,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40435-main.jpg"
     },
 ];
 

@@ -1,0 +1,46 @@
+@media (min-width: 801px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #navList {
+        max-height: none;
+        display: block;
+        background: none;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: 1rem;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        max-width: 100%;
+        width: 100%;
+        padding: 0 1rem 0.7rem 1rem;
+        margin: 0 auto;
+    }
+
+    h1 {
+        width: 100%;
+        max-width: 100%;
+        grid-column: 1 / -1;
+    }
+}

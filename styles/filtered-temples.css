@@ -4,6 +4,7 @@
     --third-color: rgb(255, 255, 255);
     --background-color: rgb(212, 230, 247);
     --first-border: 0.5px solid rgb(153, 147, 147);
+    --footer: rgb(255, 255, 0);
     --second-border: 0.5px solid rgb(245, 245, 220);
     --font: 'Roboto', sans-serif;
 }
@@ -141,7 +142,7 @@ footer p {
 #lastModified {
     font-size: 0.8rem;
     padding: 0;
-    color: rgb(255, 255, 0);
+    color: var(--footer);
 }
 
 #temple-cards {

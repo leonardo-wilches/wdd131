@@ -1,0 +1,44 @@
+@media screen and (min-width: 800px) {
+
+    main {
+        max-width: 900px;
+        padding: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        gap: 1.8rem;
+    }
+
+    .two-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: start;
+    }
+
+    fieldset {
+        padding: 1.5rem;
+    }
+
+    fieldset label {
+        margin-bottom: 0.75rem;
+    }
+
+    textarea {
+        min-height: 160px;
+    }
+
+    input[type="submit"] {
+        max-width: 300px;
+        align-self: center;
+        font-size: 1.1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}

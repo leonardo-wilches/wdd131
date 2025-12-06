@@ -1,0 +1,144 @@
+:root {
+    --primary-color: rgb(44, 44, 109);
+    --secondary-color: rgb(255, 218, 9);
+    --third-color: #b00020;
+    --background-color: #f8f6fa;
+    --text-color: #222;
+    --text-color-2: #f8f6fa;
+    --input-border: #ccc;
+    --radius: 8px;
+    --spacing: 1rem;
+    --font-main: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color:var(--text-color-2);
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    padding: 1.5rem;
+    background-color: var(--background-color);
+    border-radius: var(--radius);
+    margin-top: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+label {
+    font-weight: 400;
+}
+
+.required {
+    color: var(--third-color);
+    font-weight: 600;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, select, textarea {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid var(--input-border);
+    border-radius: var(--radius);
+}
+
+input:focus, select:focus, textarea:focus, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    border-color: transparent;
+}
+
+fieldset {
+    border: 1px solid var(--input-border);
+    padding: 1rem;
+    border-radius: var(--radius);
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-weight: 400;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+fieldset label input[type="checkbox"] {
+    margin-right: 0.4rem;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--text-color-2);
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    padding: 0.75rem;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #5e96ff;
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin: 0.3rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars>label {
+    color: var(--secondary-color);
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: var(--text-color);
+}
+
+.stars>label:hover {
+    color: var(--text-color);
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+}

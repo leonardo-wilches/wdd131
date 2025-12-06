@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <meta name="description" content="Confirmation page showing the total number of product reviews submitted.">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script defer>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            let reviewCount = localStorage.getItem("reviewCount");
+            reviewCount = reviewCount ? Number(reviewCount) + 1 : 1;
+            localStorage.setItem("reviewCount", reviewCount);
+
+            document.getElementById("count").textContent = reviewCount;
+        });
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>Thank you!</h1>
+        <p>Your review has been submitted.</p>
+        <p>Total reviews submitted: <strong id="count"></strong></p>
+    </main>
+</body>
+
+</html>

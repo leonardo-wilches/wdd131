@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form Page - Leonardo Wilches</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Product Review Form page by Leonardo Wilches. Web development practice and course portfolio.">
+    <meta name="author" content="Leonardo Wilches">
+    
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <script src="scripts/products.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+<main>
+    <p id="required-note">
+        <span class="required">*</span> Required fields
+    </p>
+
+    <form method="get" action="review.html">
+        <div class="two-columns">
+            <div>
+                <label for="product">
+                    Product Name <span class="required">*</span>
+                </label>
+                <select id="product" name="product" required aria-describedby="required-note">
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="installDate">
+                    Date of Installation <span class="required">*</span>
+                </label>
+                <input type="date" id="installDate" name="installDate" required autocomplete="off"
+                    aria-describedby="required-note">
+            </div>
+        </div>
+
+        <fieldset>
+            <legend>Overall Rating <span class="required">*</span></legend>
+            <div class="stars" role="radiogroup" aria-required="true" aria-describedby="required-note">
+
+                <input type="radio" id="onestar" name="stars" value="1" required>
+                <label for="onestar" aria-label="1 star"></label>
+
+                <input type="radio" id="twostar" name="stars" value="2">
+                <label for="twostar" aria-label="2 stars"></label>
+
+                <input type="radio" id="threestar" name="stars" value="3">
+                <label for="threestar" aria-label="3 stars"></label>
+
+                <input type="radio" id="fourstar" name="stars" value="4">
+                <label for="fourstar" aria-label="4 stars"></label>
+
+                <input type="radio" id="fivestar" name="stars" value="5">
+                <label for="fivestar" aria-label="5 stars"></label>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Useful Features</legend>
+
+            <label>
+                <input type="checkbox" name="features" value="Easy Installation">
+                Easy Installation
+            </label>
+
+            <label>
+                <input type="checkbox" name="features" value="Good Design">
+                Good Design
+            </label>
+
+            <label>
+                <input type="checkbox" name="features" value="Durable">
+                Durable
+            </label>
+
+            <label>
+                <input type="checkbox" name="features" value="Affordable">
+                Affordable
+            </label>
+        </fieldset>
+
+        <label for="review">Written Review</label>
+        <textarea id="review" name="review" rows="4" placeholder="Write your review here..."></textarea>
+
+        <label for="username">Your Name</label>
+        <input type="text" id="username" name="username" placeholder="Optional" autocomplete="name">
+
+        <input type="submit" value="Submit Review">
+    </form>
+</main>
+    <footer>
+        <p>©<span id="currentyear"></span> Leonardo Wilches - Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -13,14 +13,33 @@
         gap: 1.8rem;
     }
 
-    fieldset {
-        padding: 1.5rem;
+    fieldset:has(input[type="checkbox"]) {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem 1rem;
+        align-items: center;
     }
 
-    fieldset label {
-        margin-bottom: 0.75rem;
+    .has-checkboxes {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem 1rem;
+        align-items: center;
     }
 
+    fieldset>input[type="checkbox"] {
+        margin: 0;
+        justify-self: start;
+    }
+
+    fieldset>input[type="checkbox"]+label {
+        margin: 0;
+        justify-self: start;
+        align-items: center;
+        display: inline-flex;
+        gap: 0.35rem;
+        white-space: nowrap;
+    }
     textarea {
         min-height: 160px;
     }

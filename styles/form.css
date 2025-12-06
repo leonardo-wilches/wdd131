@@ -83,12 +83,39 @@ legend {
 }
 
 fieldset label {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
     margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 
-fieldset label input[type="checkbox"] {
-    margin-right: 0.4rem;
+fieldset:has(input[type="checkbox"]) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    align-items: center;
+}
+
+.has-checkboxes {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    align-items: center;
+}
+
+fieldset>input[type="checkbox"] {
+    margin: 0;
+    justify-self: start;
+}
+
+fieldset>input[type="checkbox"]+label {
+    margin: 0;
+    justify-self: start;
+    align-items: center;
+    display: inline-flex;
+    gap: 0.35rem;
+    white-space: nowrap;
 }
 
 input[type="submit"] {

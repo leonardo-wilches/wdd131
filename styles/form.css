@@ -1,11 +1,11 @@
 :root {
     --primary-color: rgb(44, 44, 109);
     --secondary-color: rgb(255, 218, 9);
-    --third-color: #b00020;
-    --background-color: #f8f6fa;
-    --text-color: #222;
-    --text-color-2: #f8f6fa;
-    --input-border: #ccc;
+    --third-color: rgb(179, 0, 33);
+    --background-color: rgb(248, 246, 250);
+    --text-color: rgb(34, 34, 34);
+    --text-color-2: rgb(248, 246, 250);
+    --input-border: rgb(204, 204, 204);
     --radius: 8px;
     --spacing: 1rem;
     --font-main: "Roboto", sans-serif;
@@ -102,7 +102,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #5e96ff;
+    background-color: rgb(94, 150, 255);
 }
 
 footer p {

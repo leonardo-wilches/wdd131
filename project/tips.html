@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Deco Toppers Products Tips Project - Leonardo Wilches</title>
+    <meta name="description" content="WDD 131 - Tips Site Project by Leonardo Wilches. Web development practice and course portfolio.">
+    <meta name="author" content="Leonardo Wilches">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="scripts/tips.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <img src="images/decotoppers-logo.png" loading="lazy" alt="Deco Toppers Logo">
+            <h1>Deco Toppers</h1>
+        </div>
+        <button id="menuBtn" class="hamburger">☰</button>
+        <nav id="navList" class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a class="active" href="tips.html">Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="page-title">Cake Decoration Tips</h2>
+        <section class="tips-list">
+            <article class="tip-card">
+                <h3>1. Combining Colors Effectively</h3>
+                <p>It's important to consider the colors of your cake when choosing the color of your cake topper; this will influence the
+                overall design and style.
+                </p>
+            </article>
+            <article class="tip-card">
+                <h3>2. Choosing the Right Cake Board</h3>
+                <p>When choosing your cake board, remember to leave enough margin for your cake. For example, if you have a cake with a
+                20cm diameter, you should consider a 5cm margin each side, meaning the appropriate base should be 30cm.</p>
+            </article>
+            <article class="tip-card">
+                <h3>3. Placing Your Cake Topper</h3>
+                <p>This seems very simple, but mistakes are always made. The cake topper stick shouldn't be visible; it should be fully
+                inserted into the cake so the topper stands out. If you have decorative elements between the letters and the cake
+                surface, then you should take advantage of the height the cake topper stick provides.</p>
+            </article>
+            <article class="tip-card">
+                <h3>4. Paper Butterflies</h3>
+                <p>When using paper decorations, remember that the colors should coordinate and follow the style of your cake. Place them
+                lightly on the surface for a more natural look.</p>
+            </article>
+            <article class="tip-card">
+                <h3>5. Guide Bases</h3>
+                <p>If you need to make two-tiered or very tall cakes, we recommend using cake boards with holes to give your cake
+                stability. You should subtract 1 cm from each side of the cake board compared to the size of your cake pan; that is, if
+                your cake is 20 cm, the cake board should be 18 cm.</p>
+            </article>
+        </section>
+        <section class="form-section">
+            <h2>Send Your Tip or Question</h2>
+            <form id="tips-form">
+                <input type="hidden" name="form-type" value="tips-contact">
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="tip-category">Category</label>
+                <select id="tip-category" name="tip-category" required>
+                    <option value="">Select</option>
+                    <option value="colors">Colors</option>
+                    <option value="toppers">Toppers</option>
+                    <option value="boards">Boards</option>
+                    <option value="techniques">Techniques</option>
+                </select>
+
+                <label for="message">Your Tip or Question</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+
+            </form>
+            <p id="form-success" class="success-message" hidden>
+                Thank you! Your message has been received.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Deco Toppers Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

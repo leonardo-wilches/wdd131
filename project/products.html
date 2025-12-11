@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Deco Toppers Products Site Project  - Leonardo Wilches</title>
+    <meta name="description" content="WDD 131 - Products Site Project by Leonardo Wilches. Web development practice and course portfolio.">
+    <meta name="author" content="Leonardo Wilches">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="scripts/products.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <img src="images/decotoppers-logo.png" loading="lazy" alt="Deco Toppers Logo">
+            <h1>Deco Toppers</h1>
+        </div>
+        <button id="menuBtn" class="hamburger">☰</button>
+        <nav id="navList" class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="products.html">Products</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="page-title">Products</h2>
+        <section class="filters">
+            <h3>Filter by Category</h3>
+            <label for="category-filter" class="visually-hidden">Choose category</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="toppers">Cake Toppers</option>
+                <option value="boards">Cake Boards</option>
+                <option value="kits">Decoration Kits</option>
+                <option value="seasonal">Seasonal Designs</option>
+            </select>
+        </section>
+        <section>
+            <div id="products-container" class="product-grid">
+                <article class="product-card" data-category="boards">
+                    <img src="images/board.webp" loading="lazy" alt="Cake Stand Board">
+                    <h3>Cake Shaped Board</h3>
+                    <p class="price">$1.290</p>
+                </article>
+                <article class="product-card" data-category="toppers">
+                    <img src="images/caketopper.webp" loading="lazy" alt="Wedding Cake Topper">
+                    <h3>Wedding Cake Topper</h3>
+                    <p class="price">$7.990</p>
+                </article>
+                <article class="product-card" data-category="toppers">
+                    <img src="images/minitopper.webp" loading="lazy" alt="Mini Toppers">
+                    <h3>Mini Cake Topper</h3>
+                    <p class="price">$590</p>
+                </article>
+                <article class="product-card" data-category="kits">
+                    <img src="images/paper-butterfly.webp" loading="lazy" alt="Paper Butterfly">
+                    <h3>Paper Butterfly</h3>
+                    <p class="price">$1.000</p>
+                </article>
+                <article class="product-card" data-category="kits">
+                    <img src="images/stickers.webp" loading="lazy" alt="Stickers">
+                    <h3>Stickers</h3>
+                    <p class="price">$4.990</p>
+                </article>
+                <article class="product-card" data-category="toppers">
+                    <img src="images/custom.webp" loading="lazy" alt="Custom Cake Topper">
+                    <h3>Custom Cake Topper</h3>
+                    <p class="price">$5.990</p>
+                </article>
+                <article class="product-card" data-category="boards">
+                    <img src="images/guides.webp" loading="lazy" alt="Cake Guide Board">
+                    <h3>Cake Guide Board</h3>
+                    <p class="price">$890</p>
+                </article>
+                <article class="product-card" data-category="seasonal">
+                    <img src="images/halloween.webp" loading="lazy" alt="Halloween Cake Topper">
+                    <h3>Halloween Cake Topper</h3>
+                    <p class="price">$1.290</p>
+                </article>
+                <article class="product-card" data-category="seasonal">
+                    <img src="images/christmas.webp" loading="lazy" alt="Christmas Cake Topper">
+                    <h3>Christmas Cake Topper</h3>
+                    <p class="price">$1.290</p>
+                </article>
+                <article class="product-card" data-category="toppers">
+                    <img src="images/standard-plastic.webp" loading="lazy" alt="Standard Cake Topper">
+                    <h3>Standard Plastic</h3>
+                    <p class="price">$1.490</p>
+                </article>
+                <article class="product-card" data-category="toppers">
+                    <img src="images/double-color.webp" loading="lazy" alt="Double Color Cake Topper">
+                    <h3>Standard Double Color</h3>
+                    <p class="price">$2.990</p>
+                </article>
+                <article class="product-card" data-category="toppers">
+                    <img src="images/number.webp" loading="lazy" alt="Number Cake Topper">
+                    <h3>Number Cake Topper</h3>
+                    <p class="price">$990</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Deco Toppers Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

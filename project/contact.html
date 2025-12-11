@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Deco Toppers Products Contact Project - Leonardo Wilches</title>
+    <meta name="description" content="WDD 131 - Contact and About Us Project by Leonardo Wilches. Web development practice and course portfolio.">
+    <meta name="author" content="Leonardo Wilches">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="scripts/contact.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <img src="images/decotoppers-logo.png" loading="lazy" alt="Deco Toppers Logo">
+            <h1>Deco Toppers</h1>
+        </div>
+        <button id="menuBtn" class="hamburger">☰</button>
+        <nav id="navList" class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <h2>About Deco Toppers</h2>
+            <p>
+                Deco Toppers was born out of the need many bakers had to bring their cakes to life with sturdiness and style.
+                We use
+                different materials and technologies to manufacture our products, such as 3D printing and laser cutting.
+        
+                Our brand gradually gained recognition, and today we have clients throughout the country.
+            </p>
+            <p>
+                Each product is made with love and designed to make your cakes stand out on every occasion!
+            </p>
+        </section>
+        <h2 class="page-title">Contact</h2>
+        <p>Do you have questions, custom requests, or want to collaborate? I'm here to help you!</p>
+        <section class="contact-grid">
+            <div class="contact-form">
+                <h2>Send me a message</h2>
+                <form id="contact-form">
+                    <input type="hidden" name="form-type" value="contact-page">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn-primary">Send Message</button>
+
+                    <p id="form-success" class="success-message" hidden>
+                        Thank you! Your message has been received.
+                    </p>
+
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> San Antonio, Chile</p>
+                <p><strong>Email:</strong> decotoppers.chile@decotoppers.cl</p>
+                <p><strong>Instagram:</strong> @decotoppers.chile</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Deco Toppers Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

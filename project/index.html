@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Deco Toppers Home Site Project - Leonardo Wilches</title>
+    <meta name="description" content="WDD 131 - Cake toppers, cake boards and decoration products Site Project by Leonardo Wilches. Web development practice and course portfolio.">
+    <meta name="author" content="Leonardo Wilches">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="scripts/home.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <img src="images/decotoppers-logo.png" loading="lazy" alt="Deco Toppers Logo">
+            <h1>Deco Toppers</h1>
+        </div>
+        <button id="menuBtn" class="hamburger">☰</button>
+        <nav id="navList" class="nav">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp" loading="lazy" alt="Cake decorated with a cake topper">
+            <div class="text">
+                <h2>Cake Toppers & Decorations</h2>
+                <p>Beautiful cake toppers to decorate your cakes and bring your creations to life.</p>
+                <p>Give your cakes extra stability with sturdy bases that can feature your logo.</p>
+                <p>Take your business to the next level with Deco Toppers!</p>
+            </div>
+            <img src="images/hero-2.webp" loading="lazy" alt="Mini Cake Toppers">
+        </section>
+        <h2 class="page-title">Our Products</h2>
+        <section class="featured">
+            <div id="featured-container" class="product-grid">
+                <article class="product-card">
+                    <img src="images/base.webp" loading="lazy" alt="Cake topper board stand">
+                    <h3>Cake Board with Logo</h3>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/acrilico.webp" loading="lazy" alt="Acrylic Cake Topper">
+                    <h3>Custom Acrylic Cake Topper</h3>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/mini.webp" loading="lazy" alt="Mini Cake Toppers">
+                    <h3>Mini Cake Toppers</h3>
+                </article>
+            </div>
+        </section>
+        <section class="tips">
+            <h2>Decoration Tips</h2>
+            <div class="tips-grid">
+                <article>
+                    <h3>Choosing the Right Colors</h3>
+                    <p>Learn how to combine colors that enhance your cake designs.</p>
+                </article>
+
+                <article>
+                    <h3>Cake Shape Selection</h3>
+                    <p>Which board shape should you use? Recommendations for safe and sturdy support.</p>
+                </article>
+
+                <article>
+                    <h3>Placing Cake Toppers</h3>
+                    <p>Where to position your topper to make it visually appealing.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Deco Toppers Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

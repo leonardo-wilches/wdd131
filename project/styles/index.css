@@ -177,14 +177,6 @@ footer span {
 }
 
 @media (max-width: 780px) {
-    .nav ul {
-        flex-direction: column;
-        background: var(--light);
-        padding: 1rem;
-        border-top: 3px solid var(--primary);
-        border-radius: 10px;
-    }
-
     .logo-area img {
         width: 50px;
     }
@@ -364,13 +356,6 @@ footer span {
     color: var(--primary);
 }
 
-@media (max-width: 600px) {
-    .contact-grid {
-        padding: 1.5rem;
-        margin: 1rem;
-    }
-}
-
 .about-section {
     max-width: 1100px;
     margin: 3rem auto;
@@ -394,20 +379,10 @@ footer span {
     margin-bottom: 1rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 780px) {
     .contact-grid {
         grid-template-columns: 1fr;
         padding: 1.5rem;
-    }
-
-    .hamburger {
-        font-size: 2rem;
-        background: none;
-        border: none;
-        color: var(--third-color);
-        cursor: pointer;
-        padding: 1rem 1.5rem 1rem 1rem;
-        justify-self: end;
     }
 
     .contact-form h2,
@@ -418,20 +393,6 @@ footer span {
     .about-section {
         margin: 2rem 1rem;
         padding: 1.5rem;
-    }
-
-    #navList {
-        max-height: 0;
-        overflow: hidden;
-        background-color: var(--second-color);
-        transition: max-height .3s ease;
-        grid-column: 1 / 3;
-    }
-
-    #navList.open {
-        max-height: 500px;
-        justify-content: center;
-        grid-column: 1 / 3;
     }
 }
 
@@ -480,5 +441,30 @@ footer span {
     .nav a:hover {
         background: var(--primary);
         color: var(--secondary);
+    }
+
+    #navList {
+        max-height: 0;
+        overflow: hidden;
+        background-color: var(--second-color);
+        transition: max-height .3s ease;
+        grid-column: 1 / 3;
+    }
+
+    #navList.open {
+        max-height: 500px;
+        justify-content: center;
+        grid-column: 1 / 3;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        color: var(--third-color);
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 100;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
     }
 }

@@ -27,7 +27,7 @@ navLinks.forEach(link => {
     });
 });
 
-const menuBtn = document.getElementById("menuBtn");
+const btn = document.getElementById("menuBtn");
 const navList = document.getElementById("navList");
 
 btn.addEventListener("click", () => {

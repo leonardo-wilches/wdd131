@@ -19,8 +19,8 @@ categorySelect.addEventListener("change", () => {
     });
 });
 
-const btn = document.getElementById("menu-btn");
-const navList = document.getElementById("nav-list");
+const btn = document.getElementById("menuBtn");
+const navList = document.getElementById("navList");
 
 btn.addEventListener("click", () => {
     navList.classList.toggle("open");
